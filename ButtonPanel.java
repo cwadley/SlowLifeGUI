@@ -26,27 +26,27 @@ public class ButtonPanel extends JPanel {
     
     public ButtonPanel(MainPanel m) {
 
-	// Send a reference to the Main Panel
-	// to all of the buttons.
-	
-	_run = new RunButton(m);
-	_runContinuous = new RunContinuousButton(m);
-	_stop = new StopButton(m);
-	_write = new WriteButton(m);
-	_undo = new UndoButton(m);
-	_load = new LoadButton(m);
-	_clear = new ClearButton(m);
-	setLayout(new FlowLayout());
+    	// Send a reference to the Main Panel
+    	// to all of the buttons.
+    	
+    	_run = new RunButton(m);
+    	_runContinuous = new RunContinuousButton(m);
+    	_stop = new StopButton(m);
+    	_write = new WriteButton(m);
+    	_undo = new UndoButton(m);
+    	_load = new LoadButton(m);
+    	_clear = new ClearButton(m);
+    	setLayout(new FlowLayout());
 
-	// Add all of the buttons
-	
-	add(_run);
-	add(_runContinuous);
-	add(_stop);
-	add(_write);
-	add(_undo);
-	add(_load);
-	add(_clear);
+    	// Add all of the buttons
+    	
+    	add(_run);
+    	add(_runContinuous);
+    	add(_stop);
+    	add(_write);
+    	add(_undo);
+    	add(_load);
+    	add(_clear);
     }
     
 }

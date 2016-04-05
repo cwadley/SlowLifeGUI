@@ -8,18 +8,18 @@ public class LoadButton extends JButton {
     private MainPanel _m;
     
     public LoadButton(MainPanel m) {
-	super("Load");
-	_m = m;
-	addActionListener(new LoadButtonListener());
+    	super("Load");
+    	_m = m;
+    	addActionListener(new LoadButtonListener());
     }
 
     class LoadButtonListener implements ActionListener {
 
-	public void actionPerformed(ActionEvent e) {
-	    String fileName = "backup.txt";
-	    ArrayList<String> info = FileAccess.loadFile(fileName);
-	    _m.load(info);
-	}
+    	public void actionPerformed(ActionEvent e) {
+    	    String fileName = "backup.txt";
+    	    ArrayList<String> info = FileAccess.loadFile(fileName);
+    	    _m.load(info);
+    	}
     }    
     
 }
